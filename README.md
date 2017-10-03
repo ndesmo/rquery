@@ -5,7 +5,7 @@ To install, run the following command from R
 
 ```r
 # Install devtools if you don't have it yet
-# install.packages(devtools)
+# install.packages('devtools')
 devtools::install_github('ndesmo/rquery')
 ```
 
