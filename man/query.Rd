@@ -22,8 +22,8 @@ sys.setenv(
   'db_password' = 'password'
 )
 
-sql <- "select 1 as a from dual where 1 = _number_"
-subs <- data.frame('_number_' = 1)
+sql <- "select 1 as a from dual where 1 = XnumberX"
+subs <- data.frame('XnumberX' = 1)
 
 query(sql, subs)
 }
