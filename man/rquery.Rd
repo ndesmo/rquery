@@ -5,8 +5,7 @@
 \title{RQuery}
 \usage{
 rquery(sql = NULL, name, subs = NULL, data.dir = "data",
-  sql.dir = "sql", subs.dir = "params", daily = FALSE,
-  overwrite = FALSE)
+  sql.dir = "sql", subs.dir = "subs", daily = FALSE, overwrite = FALSE)
 }
 \arguments{
 \item{sql}{SQL query to run}
