@@ -40,6 +40,6 @@ rquery(name = 'first', overwrite = TRUE)
 
 # Try using substitutes
 sql <- "select 1 as a from dual where 1 = XnumberX"
-subs <- data.frame('XnumberX' = '1')
+subs <- data.frame('XnumberX' = 1)
 rquery(sql, 'third', subs)
 ```
