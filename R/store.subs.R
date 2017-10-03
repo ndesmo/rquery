@@ -26,6 +26,6 @@ store.subs <- function(name, subs = NULL, subs.dir = 'subs') {
   }
 
   stored.subs <- dplyr::union(subs, stored.subs)
-  saveRDS(file, stored.subs)
+  saveRDS(stored.subs, subs.file)
 
 }

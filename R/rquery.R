@@ -58,4 +58,6 @@ rquery <- function(sql = NULL, name, subs = NULL,
   }
 
   store.data(data, name, subs, data.dir = data.dir)
+
+  return(data)
 }

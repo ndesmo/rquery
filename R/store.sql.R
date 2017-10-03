@@ -18,7 +18,7 @@ store.sql <- function(name, sql = NULL, sql.dir = 'sql') {
   sql.file <- get.file(name, 'sql', sql.dir = sql.dir)
 
   # Save the file
-  sql.file.conn <- file(sql.file)
+  sql.file.conn <- file(sql.file, 'w')
   writeLines(sql, sql.file.conn)
   close(sql.file.conn)
 
