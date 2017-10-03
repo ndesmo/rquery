@@ -11,7 +11,7 @@ NULL
 #'
 #' @export
 
-load.sql <- function(name, subs = NULL, data.dir = 'data') {
+load.data <- function(name, subs = NULL, data.dir = 'data') {
   data.file <- get.file(name, 'data', subs, data.dir = data.dir)
 
   if (file.exists(data.file)) {

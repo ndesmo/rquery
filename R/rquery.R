@@ -29,7 +29,7 @@
 
 
 rquery <- function(sql = NULL, name, subs = NULL,
-                   data.dir = 'data', sql.dir = 'sql', subs.dir = 'params',
+                   data.dir = 'data', sql.dir = 'sql', subs.dir = 'subs',
                    daily = FALSE, overwrite = FALSE) {
 
   # Ensure directories are created
