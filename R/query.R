@@ -28,7 +28,7 @@ query <- function(sql, subs = NULL) {
       sql <- gsub(names(subs)[i], subs[1,i], sql)
     }
   }
-  results <- RODBC::sqlQuery(conn, sql)
-  disconnect()
+  results <- DBI::dbGetQuery(conn, sql)
+  DBI::dbDisconnect(conn)
   return(results)
 }
