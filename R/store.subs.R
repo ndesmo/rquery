@@ -18,10 +18,13 @@ store.subs <- function(name, subs = NULL, subs.dir = 'subs') {
     subs <- data.frame(NULL)
   }
 
+  stored.subs <- data.frame(NULL)
   # Get the previously saved subs for this query if they exist
   if (file.exists(subs.file)) {
     stored.subs <- readRDS(subs.file)
-  } else {
+  }
+
+  if (!file.exists(subs.file) | ncol(stored.subs) == 0){
     stored.subs <- subs %>% dplyr::filter(1==0)
   }
 
