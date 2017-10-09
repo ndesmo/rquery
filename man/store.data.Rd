@@ -16,3 +16,4 @@ store.data(data, name, subs = NULL, data.dir = "data")
 \description{
 Store the query results to the filesystem.
 }
+

@@ -12,3 +12,4 @@ get.suffix(subs)
 \description{
 Get the file suffix as a hash of the subs list if it is provided. Required to keep uniqueness of various queries.
 }
+

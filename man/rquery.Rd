@@ -43,3 +43,4 @@ subs <- data.frame('XnumberX' = 1)
 
 rquery(sql, 'myquery', subs)
 }
+

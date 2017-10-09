@@ -17,3 +17,4 @@ create.directories(data.dir = "data", sql.dir = "sql",
 \description{
 Create the directories required for storing the query data and metadata locally.
 }
+

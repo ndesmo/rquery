@@ -17,3 +17,4 @@ Data frame of the query results
 \description{
 Load the query results from the filesystem.
 }
+

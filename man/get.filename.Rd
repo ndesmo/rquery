@@ -12,3 +12,4 @@ get.filename(name)
 \description{
 Correct conversion of the query name to a filename
 }
+

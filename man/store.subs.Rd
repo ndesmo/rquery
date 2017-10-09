@@ -16,3 +16,4 @@ store.subs(name, subs = NULL, subs.dir = "subs")
 \description{
 Store the subs list to the filesystem.
 }
+

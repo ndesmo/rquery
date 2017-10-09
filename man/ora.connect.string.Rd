@@ -20,3 +20,4 @@ Sys.setenv(db_host = 'myhost', db_port = 123, db_sid = 'mysid')
 ora.connect.string()
 
 }
+

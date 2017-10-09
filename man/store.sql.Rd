@@ -16,3 +16,4 @@ store.sql(name, sql = NULL, sql.dir = "sql")
 \description{
 Store the SQL query to the filesystem.
 }
+

@@ -24,3 +24,4 @@ Boolean indicating whether the SQL query should be rerun
 \description{
 Ascertain whether the SQL query should be rerun
 }
+

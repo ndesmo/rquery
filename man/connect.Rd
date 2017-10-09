@@ -34,3 +34,4 @@ Sys.setenv(connect.string = 'a connection string',
 
 conn <- connect()
 }
+
