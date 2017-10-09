@@ -4,7 +4,7 @@
 \alias{connect}
 \title{Connect}
 \usage{
-connect(oracle = FALSE)
+connect(oracle = TRUE)
 }
 \arguments{
 \item{oracle}{Boolean to indicate whether to automatically generate the connect.string for use with Oracle. Otherwise, you can provide the connect string by doing Sys.setenv('a connection string')}

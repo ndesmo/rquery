@@ -27,11 +27,14 @@ NULL
 #'
 #' conn <- connect()
 
-connect <- function(oracle = FALSE) {
+connect <- function(oracle = TRUE) {
 
-  if (oracle) {
+  connect.string <- Sys.getenv('connect.string')
+
+  if (oracle & connect.string == '') {
     ora.connect.string()
   }
+  connect.string <- Sys.getenv('connect.string')
 
   drv.name <- Sys.getenv('db_driver')
   drv <- DBI::dbDriver(drv.name)
@@ -39,7 +42,7 @@ connect <- function(oracle = FALSE) {
   uid <- Sys.getenv('db_username')
   pwd <- Sys.getenv('db_password')
 
-  conn <- DBI::dbConnect(drv, connect.string, username = uid, password = pwd)
+  conn <- DBI::dbConnect(drv, dbname = connect.string, username = uid, password = pwd)
 
   return(conn)
 }
