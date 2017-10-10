@@ -1,5 +1,5 @@
 # rquery
-Query ODBC databases efficiently from R
+Query databases efficiently from R
 
 To install, run the following command from R
 
