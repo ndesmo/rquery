@@ -1,5 +1,5 @@
 # rquery
-Query databases efficiently from R
+Auto save and reload database queries from R.
 
 To install, run the following command from R
 
